@@ -74,14 +74,7 @@ function getKnex() {
 }
 
 const tables = Object.freeze({
-  transaction: 'transactions',
-  place: 'places',
   user: 'user',
-  institute: 'institute',
-  device: 'device',
-  instituteUser: 'instituteUser',
-  file: 'file',
-
 });
 
 module.exports = {
