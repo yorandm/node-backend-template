@@ -24,7 +24,7 @@ module.exports = (app) => {
   const router = new Router({
     prefix: '/users',
   });
-  router.put('/:userEmail', getUserByEmail);
+  router.get('/:userEmail', getUserByEmail);
   app.use(router.routes())
     .use(router.allowedMethods());
 };
