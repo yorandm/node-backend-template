@@ -1,6 +1,6 @@
 const Router = require('@koa/router');
-const auth = require('../core/createAuth');
 const userService = require('../service/userService');
+const { checkJwt, checkReadMessageScope } = require('../core/auth0');
 
 
 const getUserByEmail = async (ctx) => {
@@ -10,7 +10,7 @@ const getUserByEmail = async (ctx) => {
   const {
     userEmail
   } = ctx.params;
-  ctx.body = await userService.getUserByEmail(userEmail, authorization);
+  ctx.body = await userService.getUserEmail(userEmail, authorization);
 };
 
 
@@ -24,7 +24,7 @@ module.exports = (app) => {
   const router = new Router({
     prefix: '/users',
   });
-  router.put('/:userEmail', getUserByEmail);
+  router.get('/:userEmail',  checkJwt, getUserByEmail);
   app.use(router.routes())
     .use(router.allowedMethods());
 };

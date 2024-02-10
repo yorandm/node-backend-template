@@ -1,9 +1,9 @@
-import {getUserByEmail} from 'userRepository';
+const {getUserByEmail} = require('../repository/userRepository');
 
-const getUserByEmail = (email) => {
+const getUserEmail = (email) => {
   return getUserByEmail(email);
 };
 
 module.exports = {
-  getUserByEmail
+  getUserEmail
 };
