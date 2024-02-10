@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Yorlaus/nomad-backtesting-backend.git"
+    "url": "https://github.com/yorandm/node-backend-template"
   },
   "author": "Yoran Demunter",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Yorlaus/nomad-backtesting-backend/issues"
+    "url": "https://github.com/yorandm/node-backend-template/issues"
   },
-  "homepage": "https://github.com/Yorlaus/nomad-backtesting-backend#readme",
+  "homepage": "https://github.com/yorandm/node-backend-template#readme",
   "dependencies": {
     "@koa/cors": "^5.0.0",
     "@koa/router": "^12.0.1",
