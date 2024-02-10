@@ -1,5 +1,4 @@
 const Router = require('@koa/router');
-const auth = require('../core/createAuth');
 const userService = require('../service/userService');
 
 

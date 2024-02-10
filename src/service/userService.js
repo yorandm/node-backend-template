@@ -1,7 +1,7 @@
-import {getUserByEmail} from 'userRepository';
+const userRepository =require('../repository/userRepository');
 
 const getUserByEmail = (email) => {
-  return getUserByEmail(email);
+  return userRepository.getUserByEmail(email);
 };
 
 module.exports = {
