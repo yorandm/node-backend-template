@@ -1,0 +1,31 @@
+{
+  "name": "nomad-backtesting-backend",
+  "version": "1.0.0",
+  "description": "Nodejs backend template with koa, knex, winston, and dotenv",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx env-cmd nodemon -r dotenv/config src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Yorlaus/nomad-backtesting-backend.git"
+  },
+  "author": "Yoran Demunter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yorlaus/nomad-backtesting-backend/issues"
+  },
+  "homepage": "https://github.com/Yorlaus/nomad-backtesting-backend#readme",
+  "dependencies": {
+    "@koa/cors": "^5.0.0",
+    "@koa/router": "^12.0.1",
+    "config": "^3.3.11",
+    "dotenv": "^16.4.1",
+    "knex": "^3.1.0",
+    "koa": "^2.15.0",
+    "koa-bodyparser": "^4.4.1",
+    "nodemon": "^3.0.3",
+    "pg": "^8.11.3",
+    "winston": "^3.11.0"
+  }
+}
